@@ -17,7 +17,7 @@
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 
-    background-image:  url("../images/B_Kiriko.png"); /* test for now */
+    background-image:  url("../images/Background.png"); /* test for now */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
