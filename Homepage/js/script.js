@@ -28,3 +28,30 @@ container.addEventListener('mouseleave', () => {
   img.style.transform = 'scale(1)';
   img.style.transformOrigin = 'center center';
 })});
+
+
+// Filter script
+const filterButtons = document.querySelectorAll('.filter-btn');
+
+const heroPanels = document.querySelectorAll('.hero-panel');
+
+filterButtons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const role = btn.dataset.role; // "all", "support", "tank", "damage"
+
+    // update which button looks active
+    filterButtons.forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // show / hide panels based on role
+    heroPanels.forEach((panel) => {
+      const panelRole = panel.dataset.role;
+
+      if (role === 'all' || panelRole === role) {
+        panel.style.display = '';   // show
+      } else {
+        panel.style.display = 'none'; // hide
+      }
+    });
+  });
+});
