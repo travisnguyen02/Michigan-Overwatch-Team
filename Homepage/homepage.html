@@ -6,16 +6,23 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="./images/Maize.png">
-    <title>Document</title>
+    <title>Michigan Overwatch</title>
 </head>
 <body>
 <div class="topnav">
-  <a class="active" href="homepage.html">Home</a>
-  <a href="about.html">About</a>
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
 </div>
 
+<div class="hero-filters">
+  <button class="filter-btn active" data-role="all">All</button>
+  <button class="filter-btn" data-role="tank">Tank</button>
+  <button class="filter-btn" data-role="damage">Damage</button>
+  <button class="filter-btn" data-role="support">Support</button>
+</div>  
+
 <div class="hero-container">
-    <div class="hero-panel" data-hero="Yimitra">
+    <div class="hero-panel" data-hero="Yimitra" data-role="support">
         <div class="hero-image-wrapper">
             <img src="./images/S_Lucio.png" alt="Lucio" class="hero-image">
         </div>
@@ -25,7 +32,7 @@
         </div>
     </div>
 
-<div class="hero-panel" data-hero="Altraxia">
+<div class="hero-panel" data-hero="Altraxia" data-role="damage">
     <div class="hero-image-wrapper">
         <img src="./images/S_Sojourn.png" alt="Sojourn" class="hero-image">
     </div>
@@ -35,7 +42,7 @@
     </div>
 </div>
 
-<div class="hero-panel" data-hero="Tobywan">
+<div class="hero-panel" data-hero="Tobywan" data-role="tank">
         <div class="hero-image-wrapper">
             <img src="./images/S.Doomfist.png" alt="Doomfist" class="hero-image">
         </div>
@@ -45,7 +52,7 @@
         </div>
 </div>
 
-    <div class="hero-panel" data-hero="David">
+    <div class="hero-panel" data-hero="David" data-role="tank">
         <div class="hero-image-wrapper">
             <img src="./images/S_Reinhardt.png" alt="Reinhardt" class="hero-image">
         </div>
@@ -55,7 +62,7 @@
         </div>
     </div>
 
-<div class="hero-panel" data-hero="Jessica">
+<div class="hero-panel" data-hero="Jessica" data-role="support">
     <div class="hero-image-wrapper">
         <img src="./images/S_Kiriko.png" alt="Kiriko" class="hero-image">
     </div>
@@ -65,7 +72,7 @@
     </div>
 </div>
 
-<div class="hero-panel" data-hero="Kennybay">
+<div class="hero-panel" data-hero="Kennybay" data-role="damage">
         <div class="hero-image-wrapper">
             <img src="./images/S_Tracer.png" alt="Tracer" class="hero-image">
         </div>
