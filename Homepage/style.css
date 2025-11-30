@@ -1,0 +1,218 @@
+/* lets do it. */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Dark blue Michigan Backgrond to Nav */
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1.5rem;
+  background: rgba(0, 27, 58, 0.95);
+}
+
+/* Style the text  */
+.topnav a {
+  font-family: Helvetica;
+  color: #FFCB05;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Change link color on hover */
+.topnav a:hover {
+  background-color: #FFCB05;
+  color: black;
+}
+
+body
+{
+  background-image: url("../Images/Background.png");
+  background-size: cover;
+  background: #001b3a;
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Helvetica;
+  color: white;
+}
+
+.maize {
+  color: #FFCB05;
+}
+
+/* filter style */
+
+.hero {
+  position: relative;
+  min-height: 100vh; 
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.intro
+{
+  margin-top: 10%;
+  max-width: 600px;
+  margin-left: 1.6%
+}
+
+.intro h1
+{
+  font-size: 70px;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+.intro p
+{
+  margin: 10px 0 30px;
+  color: #f5f5f5;
+}
+
+.feature
+{
+  width: 530px;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+}
+
+
+.anim
+{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup
+{
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0px); 
+  }
+}
+
+.panel 
+{
+  min-height: 100vh;
+  padding-top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background: #001b3a;
+  color: #f5f5f5;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.panel.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* text left, image right */
+.panel-right {
+  flex-direction: row;
+}
+
+/* image left, text right */
+.panel-left {
+  flex-direction: row-reverse;
+}
+
+.panel-left .panel-image {
+  justify-content: flex-start;
+}
+
+.panel-left .panel-text {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+/* text block */
+.panel-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.panel-text h2 {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  margin: 0 0 1rem;
+}
+
+.panel-text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* image block */
+.panel-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.panel-image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+/* mobile */
+@media (max-width: 1200px) {
+  .panel {
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 1.5rem;
+  }
+
+  .panel-image {
+    justify-content: center;
+  }
+
+  .panel-text {
+    max-width: none;
+  }
+
+    .hero {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro {
+    margin-top: 0;
+    margin-left: 0;
+    max-width: 90%;
+  }
+
+  .feature {
+    position: static;
+    width: 70vw;
+    max-width: 350px;
+    height: auto;
+    margin-top: 1.5rem;
+    mask-image: none;
+  }
+}
