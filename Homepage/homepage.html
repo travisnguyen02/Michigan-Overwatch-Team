@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/panel.css">
     <link rel="icon" type="image/x-icon" href="./images/Maize.png">
     <title>Michigan Overwatch</title>
 </head>
 <body>
+  <main class="scroll-container">
 <section class="hero">
 <div class="topnav">
   <a class="active" href="./homepage.html">Home</a>
@@ -19,19 +20,22 @@
 <div class="intro">
 <h1 class="anim"> Welcome to<br>
   <span class="maize">Michigan Overwatch. </span>
-  </h1>
+</h1>
 <p class="anim"> University of Michigan Esports Overwatch Team, Presenting player's favorite
     music and informaton.
 </p>
- </div>
+</div>
 
- <img src="./images/Kiriko.png" class="feature anim">
+ <img src="./images/Kiriko.png" class="feature anim" alt="Kiriko">
  </section>
 
-<section class="panel panel-right">
+<section class="panel panel-right" data-track="audio/kennybay.mp3">
 
-  <div class="panel-text text">
+  <div class="panel-text">
     <h2>Meet <span class="maize">KennyBay. </span></h2>
+
+    <div class="panel-bar"></div>
+
     <p>
       Lorem ipsum dolor sit amet, 
       consectetur adipiscing elit, 
@@ -50,16 +54,48 @@
   </div>
 
   <div class="panel-image">
-    <img src="./images/B_Tracer.png" alt="Tracer, Kennybay's main Hero">
+    <img src="./images/Half_tracer.png" alt="Tracer, Kennybay's main Hero">
   </div>
 
 </section>
 
+<section class="panel panel-left" data-track="audio/kennybay.mp3">
+
+  <div class="panel-text">
+    <h2>Meet <span class="maize">Altraxia. </span></h2>
+
+    <div class="panel-bar"></div>
+
+    <p>
+      Lorem ipsum dolor sit amet, 
+      consectetur adipiscing elit, 
+      sed do eiusmod tempor incididunt 
+      ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud 
+      exercitation ullamco laboris nisi ut 
+      aliquip ex ea commodo consequat. 
+      Duis aute irure dolor in reprehenderit 
+      in voluptate velit esse cillum dolore eu 
+      fugiat nulla pariatur. Excepteur sint 
+      occaecat cupidatat non proident, sunt 
+      in culpa qui officia deserunt mollit 
+      anim id est laborum.
+    </p>
+  </div>
+
+  <div class="panel-image">
+    <img src="./images/Half_soj.png" alt="Sojourn, Altraxia's Favorite Hero">
+  </div>
+
 </section>
 
-<section class="panel panel-left">
+<section class="panel panel-right" data-track="audio/tobywan.mp3">
+
     <div class="panel-text">
       <h2>Meet <span class="maize">Tobywan. </span> </h2>
+
+      <div class="panel-bar"></div>
+
       <p>
         Lorem ipsum dolor sit amet, 
         consectetur adipiscing elit, 
@@ -78,14 +114,45 @@
     </div>
 
       <div class="panel-image">
-    <img src="./images/B_Queen.png" alt="Junkerqueen, Tobywan's Main Hero">
+    <img src="./images/Half_queen.png" alt="Junkerqueen, Tobywan's Main Hero">
     </div>
 </section>
 
-<section class="panel panel-right">
+<section class="panel panel-left" data-track="audio/tobywan.mp3">
+
+    <div class="panel-text">
+      <h2>Meet <span class="maize">Pupzy. </span> </h2>
+
+      <div class="panel-bar"></div>
+
+      <p>
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt 
+        ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud 
+        exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu 
+        fugiat nulla pariatur. Excepteur sint 
+        occaecat cupidatat non proident, sunt 
+        in culpa qui officia deserunt mollit 
+        anim id est laborum.
+      </p>
+    </div>
+
+      <div class="panel-image">
+    <img src="./images/Half_bap.png" alt="Junkerqueen, Tobywan's Main Hero">
+    </div>
+</section>
+
+<section class="panel panel-right" data-track="audio/yimitra.mp3">
 
   <div class="panel-text">
     <h2>Meet <span class="maize">Yimitra. </span></h2>
+
+    <div class="panel-bar"></div>
     <p>
       Lorem ipsum dolor sit amet, 
       consectetur adipiscing elit, 
@@ -104,12 +171,52 @@
   </div>
 
   <div class="panel-image">
-    <img src="./images/B_Brig.png" alt="Brigitte, Yimitra's Main Hero">
+    <img src="./images/Half_brig.png" alt="Brigitte, Yimitra's Main Hero">
   </div>
 
 </section>
-
 </div>
+
+<section class="cta">
+  <div class="cta-inner">
+    
+    <h1>Interested?</h1>
+
+    <div class="cta-features">
+      <div class="feature-item">
+      <h2>3 Teams</h2>
+    <div class="team-icons">
+      <img src="./images/var.png"   class="team-icon" alt="Varsity Block">
+      <img src="./images/jv1.png"   class="team-icon" alt="JV1 Block">
+      <img src="./images/jv2.png"   class="team-icon" alt="JV2 Block">
+    </div>
+      <p>For all Skill level and Commitment.</p>
+    </div>
+
+      <div class="feature-item">
+      <h2>Coaching</h2> 
+      <div class="team-icons">
+        <img src="./images/S_OW.png"   class="team-icon" alt="Overwatch Icon">
+      </div>
+      <p>For all participating members on teams.</p>
+    </div>
+      <div class="feature-item">
+      <h2>Community</h2>
+            <div class="team-icons">
+        <img src="./images/Hand.png"   class="team-icon" alt="Coaching Icon">
+      </div>
+    <p>Tournament, PUGs, Watchparty, Hosted Weekly.</p>
+  </div>
+    </div>
+
+    <p class="cta-contact">Contact <span class="maize-text"> nathantt.</span> on Discord for more info</p>
+
+  </div>
+</section>
+
+<section class="end-paint"></section>
+
+</main>
 
 <script src="js/script.js"></script>
 </body>
