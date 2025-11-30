@@ -1,0 +1,61 @@
+/* lets do it. */
+
+
+
+/* Dark blue Michigan Backgrond to Nav */
+.topnav {
+  background-color: #00274C;
+  overflow: hidden;
+}
+
+/* Style the text  */
+.topnav a {
+  font-family: sans-serif;
+  font-size: 17px;
+  float: left;
+  color: #FFCB05;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change link color on hover */
+.topnav a:hover {
+  background-color: #FFCB05;
+  color: black;
+}
+
+body
+{
+  background-image: url("../Images/Background.png");
+  background-size: cover;
+  background-color: tan;
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow-x: hidden;
+  
+}
+
+/* filter style */
+
+.hero-filters {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: flex-end; /* or center */
+}
+
+.filter-btn {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #1a4b82;
+    color: white;
+    border-color: #1a4b82;
+}
