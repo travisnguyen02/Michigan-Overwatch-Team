@@ -1,0 +1,136 @@
+.panel 
+{
+  min-height: 100vh;
+  padding-top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: #f5f5f5;
+
+  scroll-snap-align: center;
+  scroll-snap-stop: normal;
+
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.panel.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* text left, image right */
+.panel-right {
+  
+  flex-direction: row;
+  background: #001b3a;
+}
+
+/* image left, text right */
+.panel-left {
+  flex-direction: row-reverse;
+}
+
+.panel-left .panel-image {
+  justify-content: flex-start;
+}
+
+.panel-left .panel-text {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+/* text block */
+.panel-text {
+  flex: 1;
+  max-width: 40vw;
+}
+
+.panel-text h2 {
+  font-size: 4rem;
+  margin: 0 0 1rem;
+}
+
+.panel-text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.panel-text {
+  position: relative;
+}
+
+/* image block */
+.panel-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.panel-image img {
+  max-width: 100vh;
+  width: 100%;
+  height: auto;
+
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+/* minor animation tweaks */
+
+.panel-text h2,
+.panel-text p {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.panel-text h2 {
+  transform: translateY(-8rem);
+}
+
+ /* slide from right */
+.panel-right .panel-text p {
+  transform: translateX(-4rem);
+}
+
+ /* slide from right */
+.panel-left .panel-text p {
+  transform: translateX(4rem);
+}
+
+.panel.show .panel-text h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.0s;
+}
+
+.panel.show .panel-text p {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.6s;
+}
+
+@media (max-width: 1200px) {
+  .panel {
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 1.5rem;
+  }
+
+  .panel-image {
+    justify-content: center;
+  }
+
+  .panel-text {
+    max-width: none;
+  }
+
+  .panel-bar
+  {
+    display: none;
+  }
+}
