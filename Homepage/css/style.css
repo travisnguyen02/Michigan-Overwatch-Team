@@ -34,7 +34,7 @@ html {
 
 body
 {
-  background-color: #00274C;
+  background: url("../images/Background.png") no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
@@ -178,12 +178,12 @@ body
 .team-icons {
   display: flex;
   justify-content: center;
-  gap: 0.8rem;     /* space between the icons */
+  gap: 0.8rem;
   margin-bottom: 0.75rem;
 }
 
 .team-icon {
-  width: 70px;     /* adjust based on your image size */
+  width: 70px;
   height: 70px;    
   object-fit: contain;
   border-radius: 8px; /* optional */
