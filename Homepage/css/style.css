@@ -84,6 +84,7 @@ body
   position: absolute;
   bottom: 0;  
   right: 6vw;
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
 
 
