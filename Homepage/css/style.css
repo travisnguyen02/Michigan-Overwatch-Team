@@ -2,7 +2,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
   scroll-padding-top: 1vw;
 }
 
@@ -52,13 +51,11 @@ body
 
 /* introduction section */
 .hero {
-  background: url("../images/Background.png") no-repeat center center;
   background-size: cover;
   position: relative;
   min-height: 100vh; 
   padding-top: 16vh;
   box-sizing: border-box;
-  background-attachment: fixed;
 }
 
 .intro
