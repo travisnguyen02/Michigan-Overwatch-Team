@@ -24,7 +24,6 @@
 
 /* text left, image right */
 .panel-right {
-  /* flex-direction removed, background kept */
   background: #00274C
 }
 
@@ -137,7 +136,6 @@
   align-items: flex-start;
 }
 
-/* fix alignment */
 .panel-left .panel-links,
 .panel-left .panel-icons {
   align-items: flex-end;
@@ -193,7 +191,7 @@
   transition-delay: 0.6s;
 }
 
-/* fade + slide for top-level children (text + image) */
+/* Brute Strength */
 .panel > * {
   opacity: 0;
   transform: translateY(40px);
