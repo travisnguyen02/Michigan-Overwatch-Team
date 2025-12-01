@@ -25,7 +25,7 @@
 /* text left, image right */
 .panel-right {
   /* flex-direction removed, background kept */
-  background: #001b3a;
+  background: #00274C
 }
 
 .panel-right .panel-text {

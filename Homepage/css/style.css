@@ -34,7 +34,7 @@ html {
 
 body
 {
-  background: url("../images/Background.png") no-repeat center center;
+  background-color: #00274C;
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
