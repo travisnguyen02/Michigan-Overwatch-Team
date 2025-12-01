@@ -43,6 +43,7 @@
   position: relative;
   max-width: 40vw;
   padding-bottom: 2rem;
+  font-weight: 200;
 }
 
 .panel-text h2 {
@@ -202,7 +203,6 @@
     max-width: none;
   }
 
-  /* everything is one column for simplicity */
   .panel-left .panel-text,
   .panel-right .panel-text,
   .panel-left .panel-image,
