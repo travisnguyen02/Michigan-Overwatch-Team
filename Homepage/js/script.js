@@ -2,7 +2,7 @@
 
 // Script that when the viewer (Screen) detects a section, will active
 document.addEventListener("DOMContentLoaded", () => {
-  const panels = document.querySelectorAll(".panel, .cta");
+  const panels = document.querySelectorAll(".panel, .end");
 
   const observer = new IntersectionObserver(
     entries => {
