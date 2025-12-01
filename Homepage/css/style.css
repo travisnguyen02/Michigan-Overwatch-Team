@@ -34,8 +34,9 @@ html {
 
 body
 {
-  background: url("../images/Background.png") center center;
-  background-size: 200%;
+  background: url("../images/Background.png") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
   margin: 0;
   overflow-x: hidden;
   font-family: Helvetica;
